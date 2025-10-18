@@ -3,7 +3,7 @@ services:
     image: mysql:8
     container_name: mysql-db
     environment:
-      MYSQL_ROOT_PASSWORD: 1011
+      MYSQL_ROOT_PASSWORD: jayanith
       MYSQL_DATABASE: productdb
     ports:
       - "3307:3306"
@@ -13,7 +13,7 @@ services:
       - springboot-mysql-net
 
   backend:
-    image: shruthikaaa10/2300032637-exam-backend:final
+    image: jayanithb/2300031535.backend:final
     container_name: springboot
     ports:
       - "2025:2000"
@@ -24,7 +24,7 @@ services:
       - springboot-mysql-net
 
   frontend:
-    image: shruthikaaa10/2300032637-exam-frontend:final
+    image: jayanithb/2300031535-frontend:final
     container_name: react
     ports:
       - "2001:80"
