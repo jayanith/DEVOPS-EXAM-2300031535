@@ -13,7 +13,7 @@ services:
       - springboot-mysql-net
 
   backend:
-    image: jayanithb/2300031535.backend:final
+    image: jayanithb/2300031535-backend:final
     container_name: springboot
     ports:
       - "2025:2000"
